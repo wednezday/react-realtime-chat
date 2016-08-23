@@ -1,2 +1,2 @@
-# react-socket.io
-React Application | Socket.io
+# react-realtime-chat
+React Application | Chat Realtime
