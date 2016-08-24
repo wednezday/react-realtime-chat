@@ -12,3 +12,6 @@ React Application | Chat Realtime
 # start react (client)
 - npm start
 - http://localhost:8000/
+
+# demo
+![React Application | Chat Realtime](./images/2016-08-24_9-53-55.png)
