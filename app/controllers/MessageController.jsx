@@ -15,6 +15,21 @@ class MessageController extends React.Component {
 
   }
 
+  renderUserMessage(){
+    if (this.props.text) {
+      return (
+        <p>
+          <strong> { this.props.user } </strong> :
+          <span> { this.props.text } </span>
+        </p>
+      );
+    } else {
+      return (
+        <span></span>
+      );
+    }
+  }
+
   render () {
 
     // console.log('MessageController: #' + step + ' render()');
@@ -22,7 +37,7 @@ class MessageController extends React.Component {
 
     return (
       <div className="message-controller">
-        {(this.props.user && this.props.text) ? this.props.user + ' : ' + this.props.text : null }
+        { this.renderUserMessage() }
       </div>
     );
 
